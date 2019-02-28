@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import sys
 
 if len(sys.argv) == 1:
-     print "Usage: " + sys.argv[0] + " result.xml"
+     print "Usage: " + sys.argv[0] + " results.xml"
      sys.exit()
 
 masscan_file = sys.argv[1]
