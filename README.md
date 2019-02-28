@@ -25,3 +25,13 @@ View all emails only, sort alphabetically and remove any duplicates:
 View unique account descriptions (any passwords in there?)
 
 `cat parsed-users.csv | cut -d "," -f 6 | sort | uniq`
+
+
+
+
+
+# masscan_parse.py
+Parse masscan xml to ip:port format.
+
+## Usage
+`python ./masscan_parse.py <result.xml>`
