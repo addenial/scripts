@@ -30,7 +30,7 @@ View unique account descriptions (any passwords in there?)
 
 
 
-# masscan_parse.py
+# masscan_parser.py
 Parse masscan xml to ip:port format.
 
 ## Usage
