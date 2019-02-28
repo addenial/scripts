@@ -34,4 +34,4 @@ View unique account descriptions (any passwords in there?)
 Parse masscan xml to ip:port format.
 
 ## Usage
-`python ./masscan_parse.py <result.xml>`
+`python ./masscan_parser.py <results.xml>`
