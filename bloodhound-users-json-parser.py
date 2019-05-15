@@ -4,7 +4,8 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-import json
+#import json
+import simplejson
 
 if len(sys.argv) == 1:
     print "Usage: " + sys.argv[0] + " bloodhound_users.json"
@@ -12,7 +13,8 @@ if len(sys.argv) == 1:
 
 bhuserfile = sys.argv[1]
 with open(bhuserfile) as data_file:
-    data = json.load(data_file)
+    #data = json.load(data_file)
+    data = simplejson.load(data_file)
 
 
 #print data['users'][0]['Name']
@@ -25,4 +27,3 @@ for i in data['users']:
     odisplay = i['Properties']['displayname']
     odescription = i['Properties']['description']
     print "%s,%s,%s,%s,%s,%s" %(oname,oenabled,odisplay,oemail,otitle,odescription) 
-
