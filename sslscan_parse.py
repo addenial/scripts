@@ -1,4 +1,4 @@
-# Script by Jesse Nebling thx jesse %)
+# thx Jesse N %) 
 
 from xml.etree import ElementTree
 import csv
@@ -68,7 +68,12 @@ class CSVCreate:
                     expired = "Certificate is expired"
                 else:
                     expired = "Certificate is live"
-
+                
+                pk_bits = ''
+                issuer = ''
+                certselfsigned = ''
+                validstart = ''
+                validend = ''
                 signaturealgorithm = ssltest.find('certificate').find('signature-algorithm').text
                 pk_error = ssltest.find('certificate').find('pk').attrib['error']
                 pk_type = ssltest.find('certificate').find('pk').attrib['type']
@@ -77,9 +82,11 @@ class CSVCreate:
                 certselfsigned = ssltest.find('certificate').find('self-signed').text
                 validstart = ssltest.find('certificate').find('not-valid-before').text
                 validend = ssltest.find('certificate').find('not-valid-after').text
-          
+            
+            except KeyError:
+                pass 
             except AttributeError:
-                    pass
+                pass
 
 
             for cipherinfo in ssltest.iter('cipher'):
