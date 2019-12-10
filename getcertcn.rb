@@ -3,6 +3,8 @@
 require 'socket'
 require 'openssl'
 
+#thx lm!
+
 #Check to make sure that we have a file argument and it exists. 
 if(ARGV.count != 1) 
 	puts "Usage: getcertcn.rb <file>\n   file can include a port (host:port), 443 used by default."
