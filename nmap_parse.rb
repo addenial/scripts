@@ -1,4 +1,9 @@
-require 'nmap/parser'
+
+#!/usr/bin/ruby
+
+
+require './nmap-parser-0.3.5/lib/nmap/parser.rb'
+#require 'nmap/parser'
 require 'optparse'
 parser = Nmap::Parser.new
 file=0
