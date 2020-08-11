@@ -1,0 +1,31 @@
+Dependencies:
+Found under %PATH%
+	dos2unix
+	sed
+	pth-net
+
+Defined in functions/settings.py
+	pywerview.py
+	secretsdump.py
+	RunFinger.py
+
+
+python redrecon.py --help
+Note: If you have a hash instead of a plaintext password, you can pass that using --hashed_password
+Additional run time information is written to log.txt
+
+python redrecon.py --targets <ips.txt> --thread_count <10> --domain <domain.local> --username <user> --password <pass>
+	--secrets_dump
+	--local_groups
+	--rdp_members
+	--finger_data
+	--net_sessions
+	--local_admin
+	--net_share
+	--process
+	--service
+	--the_works (Runs everything)
+ 
+
+
+
