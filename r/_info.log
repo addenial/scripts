@@ -14,7 +14,7 @@ python redrecon.py --help
 Note: If you have a hash instead of a plaintext password, you can pass that using --hashed_password
 Additional run time information is written to log.txt
 
-python redrecon.py --targets <ips.txt> --thread_count <10> --domain <domain.local> --username <user> --password <pass>
+python redrecon.py --input_file <ips.txt> --thread_count <10> --domain <domain.local> --username <user> --password <pass>
 	--secrets_dump
 	--local_groups
 	--rdp_members
