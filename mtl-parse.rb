@@ -2,7 +2,7 @@
 
 
 #`ruby nmap_parse.rb -i results_TCP_Top200Ports_sS_sV.xml > mtl.csv`
-`ruby nmap_parse.rb -i results_UDP_Top1024Ports_sU_sV.xml >> mtl.csv`
+`ruby nmap_parse.rb -i results_UDP_Top1024Ports_sU_sV.xml > mtl.csv`
 `ruby nmap_parse.rb -i results_TCP_full.xml >> mtl.csv`
 
 
