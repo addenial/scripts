@@ -4,6 +4,8 @@ Found under %PATH%
 	sed
 	pth-net
 
+#apt install parallel
+
 Defined in functions/settings.py
 	pywerview.py
 	secretsdump.py
