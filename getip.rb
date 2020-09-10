@@ -5,7 +5,7 @@
 require 'optparse'
 require 'resolv'
 require 'thread'
-require 'net/ping'
+#require 'net/ping'
 
 #checks if the host is up!
 def up?(host,flag)
