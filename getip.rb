@@ -6,6 +6,8 @@ require 'optparse'
 require 'resolv'
 require 'thread'
 #require 'net/ping'
+#require './net-ping-2.0.8/lib/net/ping.rb'
+
 
 #checks if the host is up!
 def up?(host,flag)
