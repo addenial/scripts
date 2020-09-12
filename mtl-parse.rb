@@ -10,6 +10,9 @@
 `cat mtl.csv | grep -vF tcpwrapped | cut -d, -f2 | sort | uniq > ports.txt`
 
 
+#show all discovered ports, comma seperated for nessus,etc.
+system("cat ports.txt | sed -e ':a' -e 'N' -e '$!ba' -e 's/\\n/,/g'   ")
+
 
 ports='ports.txt'
 File.readlines(ports).each do |line|
