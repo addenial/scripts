@@ -14,6 +14,7 @@ system(' cat mtl.csv | cut -d "," -f 1,2 | sed -e "s/,/:/g"  ')
 #ruby preptargets.rb  | grep -E '80|443|8080|8443'
 
 
+
 #to prepend with http or https
 #cat 80.open | sed -e 's/^/http:\/\//'
 #cat 443.open | sed -e 's/^/https:\/\//'
@@ -34,5 +35,15 @@ system(' cat mtl.csv | cut -d "," -f 1,2 | sed -e "s/,/:/g"  ')
 
 #sort all targets for 2nd column 
 #cat mtl.csv | sort -t, -k2
+##web
+#cat mtl.csv | sort -t, -k2 | grep http
+##ssl
+#cat mtl.csv | sort -t, -k2 | grep ssl
+##sslscan prep
+#cat mtl.csv | sort -t, -k2 | grep ssl | cut -d "," -f 1,2 | sed -e "s/,/:/g"
+
+
+
+
 
 
