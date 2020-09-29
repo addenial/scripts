@@ -32,6 +32,7 @@ system(' cat mtl.csv | cut -d "," -f 1,2 | sed -e "s/,/:/g"  ')
 #cat results_TCP_full.xml  | cut -c1-80
 
 
-
+#sort all targets for 2nd column 
+#cat mtl.csv | sort -t, -k2
 
 
