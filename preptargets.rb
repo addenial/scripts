@@ -1,6 +1,25 @@
 #!/usr/bin/ruby
 
 
+#prep to show first uniq 3 octect only:
+#cat out_servers.csv | cut -d "," -f 3 | sort | uniq | cut -d "." -f 1,2,3 | uniq > subnet
+
+#append .0/24 to the end
+#cat subnet | sed -e 's/$/.0\/24/'
+
+#append in place
+#sed -i -e 's/$/.0\/24/' subnet
+
+#append /32 to the end
+#cat subnet | sed -e 's/$/\/32/'
+
+#COMBO - all above, take in ips, show class-c subnets
+#cat out_servers.csv | cut -d "," -f 3 | sort | uniq | cut -d "." -f 1,2,3 | uniq | sed -e 's/$/.0\/24/'
+
+
+
+
+
 #preptargets.rb
 
 #show only ip:port from mtl csv
